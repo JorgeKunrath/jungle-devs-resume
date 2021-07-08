@@ -13,7 +13,7 @@ export default function LearnMore() {
       </p>
       <p>Do you wan't to know more about what I have learn?</p>
       <p>
-        <a href="/what-i-have-done">Yeess</a> ///{' '}
+        <a href="/what-i-have-done">Yeess</a> ---{' '}
         <a href="#you-have-no-power-here">
           Nope <small>(You Have No Power Here 🧙‍♂️)</small>
         </a>
