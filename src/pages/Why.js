@@ -1,4 +1,3 @@
-import styled from 'styled-components'
 import Dropdown from '../components/Dropdown'
 import { Btn, Wrapper } from '../components/GlobalStyles'
 
