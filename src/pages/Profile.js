@@ -8,7 +8,7 @@ export default function Profile() {
 
   useEffect(() => {
     setFinished(true)
-  }, [])
+  }, [setFinished])
 
   return (
     <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr' }}>
