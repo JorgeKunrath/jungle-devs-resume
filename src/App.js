@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 import { GlobalProvider } from './context/GlobalContext'
+import ScrollToTop from './components/ScrollToTop'
 
 import Welcome from './pages/Welcome'
 import CatchySong from './pages/CatchySong'
@@ -15,6 +16,7 @@ export default function App() {
   return (
     <GlobalProvider>
       <BrowserRouter>
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Welcome />} />
           <Route path="/catchy-song" element={<CatchySong />} />

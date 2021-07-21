@@ -10,7 +10,7 @@ export default function Welcome() {
   return (
     <Wrapper $center>
       <h1>Welcome, Jungler!</h1>
-      <p>In the beginning of the experience will play a music, and I warn you, it's catchy!</p>
+      <p>In the beginning of this experience a song will start playing, but I warn you – it's catchy!</p>
       <p>
         <Btn to="/catchy-song">Start</Btn>
         <br />
