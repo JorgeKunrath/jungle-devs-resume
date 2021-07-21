@@ -28,6 +28,7 @@ export default function WhatIHaveDone() {
           a month to make a{' '}
           <a
             href="https://jorgekunrath.github.io/INE5646-projeto-final-imobiliaria/"
+            target="_blank"
             rel="noreferrer"
           >
             webapp for a real state business <small>(admin access in the footer)</small>
