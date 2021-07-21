@@ -17,7 +17,7 @@ export default function LearnMore() {
         </p>
       </div>
       <p style={{ textAlign: 'center' }}>
-        <Btn to="/what-i-have-done">So what have you done so far?</Btn>
+        <Btn to="/what-i-have-done">And what fruits you already discovered?</Btn>
       </p>
     </Wrapper>
   )
