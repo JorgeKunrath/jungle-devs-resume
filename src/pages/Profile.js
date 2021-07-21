@@ -1,38 +1,53 @@
+import { useContext, useEffect } from 'react'
+import { Link } from 'react-router-dom'
+
+import { GlobalContext } from '../context/GlobalContext'
+
 export default function Profile() {
+  const { setFinished } = useContext(GlobalContext)
+
+  useEffect(() => {
+    setFinished(true)
+  }, [])
+
   return (
     <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr' }}>
       <div>
-        <h1>Hello there, I'm Jorge Kunrath</h1>
+        <h1>Hello there, I'm Jorge Kunrath, and I want to work with you</h1>
         <img
           src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png"
           alt=""
         />
-        <p>telefone</p>
-        <p>email</p>
-        <p>github</p>
-        <p>linkedin</p>
-        <pre>uma frase aqui...?</pre>
+        <p>(48) 99145 2219</p>
+        <p>jorgeks95@gmail.com</p>
+        <p>
+          <a href="https://github.com/JorgeKunrath" target="_blank" rel="noreferrer">
+            GitHub
+          </a>
+        </p>
+        <p>
+          <a href="https://linkedin.com/in/jorge-kunrath" target="_blank" rel="noreferrer">
+            Linkedin
+          </a>
+        </p>
       </div>
       <div>
-        <p>Índice</p>
+        <p>Index</p>
         <ul>
           <li>
-            <a href="/">Home</a>
+            <Link to="/">The beginning</Link>
           </li>
           <li>
-            <a href="/catchy-song">Song</a>
+            <Link to="/why">Why I want to work at Jungle</Link>
           </li>
           <li>
-            <a href="/why">Why I want to work at Jungle</a>
+            <Link to="/learn">I love to learn</Link>
           </li>
           <li>
-            <a href="/learn">I love to learn</a>
+            <Link to="/learn-more">My goals</Link>
           </li>
           <li>
-            <a href="/learn-more">Goals</a>
-          </li>
-          <li>
-            <a href="/what-i-have-done">Experiences</a>
+            <Link to="/what-i-have-done">Experiences</Link>
           </li>
         </ul>
       </div>

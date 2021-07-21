@@ -1,5 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
+import { GlobalProvider } from './context/GlobalContext'
+
 import Welcome from './pages/Welcome'
 import CatchySong from './pages/CatchySong'
 import ButReally from './pages/ButReally'
@@ -11,7 +13,7 @@ import Profile from './pages/Profile'
 
 export default function App() {
   return (
-    <div>
+    <GlobalProvider>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Welcome />} />
@@ -24,6 +26,6 @@ export default function App() {
           <Route path="/profile" element={<Profile />} />
         </Routes>
       </BrowserRouter>
-    </div>
+    </GlobalProvider>
   )
 }

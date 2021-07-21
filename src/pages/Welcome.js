@@ -1,12 +1,18 @@
+import { useContext } from 'react'
+import { Link } from 'react-router-dom'
+
+import { GlobalContext } from '../context/GlobalContext'
+
 export default function Welcome() {
+  const { finished } = useContext(GlobalContext)
+
   return (
     <div>
       <h1>Welcome Jungler!</h1>
+      <p>In the beginning of the experience will play a music, and I warn you, it's catchy!</p>
       <a href="./catchy-song">Start</a>
-      <p>The beginning of the experience has sound, and I warn you, its catchy!</p>
-      <a href="/profile">
-        skip to my profile info <del>(please don't)</del>
-      </a>
+      <br />
+      {finished && <Link to="/profile">skip to my profile info</Link>}
     </div>
   )
 }

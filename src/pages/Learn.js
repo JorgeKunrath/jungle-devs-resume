@@ -1,28 +1,35 @@
+import { Link } from 'react-router-dom'
+
 export default function Learn() {
   return (
     <div>
       <h1>HELL YEEEAAAHHH</h1>
       <p>
-        Desde criança eu sempre gostei de aprender (bom, meio que toda criança), mas isso não parou
-        nunca. Meu YouTube é recheado de vídeos de ciências, programação, engenharia e Magic (MTG),
-        para descontrair.
+        Since I was a kid I always love to learn, well, kinda of all of the kids, but this never
+        stoped for me. My YouTube is full of videos of science, programing, engineering. A lot of
+        different topics, is not only usefull subjects that I like to learn, but anything. It also
+        has Magic (MTG, a card game) too.
       </p>
       <p>
-        Minha carreira na programação foi em grande parte autodidata. Sou estudante de design na
-        UFSC e em 2018 entrei no meu primeiro emprego como dev. Eu era um estagiário solo, não
-        tínhamos um setor de TI ou de design e me botaram para fazer um site. Sabia como? Não! Mas
-        botaram fé em mim eu fui lá e fiz.
+        My programing carrer is mostly self taught. The basics at least. I entered in Design school
+        in 2016 (UFSC) and in 2018 I got my first programing job. I was a intern in a engineering
+        company. Was a solo intern, had no team or guidance in programing or design. My task was to
+        make their new site. I had almost no clue in how to do it, but they trusted me and provide
+        the time for study and experiment,{' '}
+        <a href="http://creative-solutions.eng.br/" target="_blank" rel="noreferrer">
+          and I did it!
+        </a>
       </p>
       <p>
-        Meu segundo estágio também foi solo. Muita informação acumulada nesses 2 anos de estudo, mas
-        eu senti que cresci de verdade no momento que entrei no meu terceiro estágio, junto de um
-        time e mentores. Neste ponto foi como se todo o conhecimento desordenado tomasse forma e
-        passasse a fazer sentido. É o ditado do tomate, saber que é uma fruta é uma coisa, saber que
-        não se faz salada de frutas com ele é outra.
+        My second internship was also a solo project. I gathered a lot of information in those 2
+        years, but I feel like that I really grew up when I started my third internship. There I had
+        a team and guidance, people to help me organize my thoughts in usefull ways. Is like the
+        saying of the tomato: to know that it's a fruit is one thing, to know that you don't make a
+        fruit salad with it is a different one.
       </p>
-      <a href="/learn-more">
-        Eww, that would be a pretty nasty fruit salad. So, what is the next step?
-      </a>
+      <Link to="/learn-more">
+        Eww, that would be a pretty nasty fruit salad. So, what is your next step?
+      </Link>
     </div>
   )
 }

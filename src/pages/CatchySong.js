@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 export default function CatchySong() {
   return (
     <div>
@@ -12,7 +14,7 @@ export default function CatchySong() {
         </p>
       </div>
       <div>
-        <a href="/but-really">haha, cool</a>
+        <Link to="/but-really">haha, cool</Link>
       </div>
     </div>
   )
