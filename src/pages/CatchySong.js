@@ -1,8 +1,6 @@
 import { useEffect } from 'react'
 import styled, { keyframes } from 'styled-components'
-import useSound from 'use-sound'
 
-import wannabe from '../assets/spice_girls_wannabe.mp3'
 import { Btn, Wrapper } from '../components/GlobalStyles'
 import Lyrics from '../components/Lyrics'
 import ProgressBar from '../components/ProgressBar'
@@ -21,9 +19,7 @@ const WrapperButton = styled.div`
   animation: ${fadeIn} 1s ease 14s forwards;
 `
 
-export default function CatchySong() {
-  const [play, { sound, stop }] = useSound(wannabe)
-
+export default function CatchySong({ play, sound, stop }) {
   useEffect(() => {
     if (sound) {
       play()
