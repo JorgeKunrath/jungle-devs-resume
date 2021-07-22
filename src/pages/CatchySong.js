@@ -1,21 +1,46 @@
+import { useEffect } from 'react'
+import styled, { keyframes } from 'styled-components'
+import useSound from 'use-sound'
+
+import wannabe from '../assets/spice_girls_wannabe.mp3'
 import { Btn, Wrapper } from '../components/GlobalStyles'
+import Lyrics from '../components/Lyrics'
+import ProgressBar from '../components/ProgressBar'
+
+const fadeIn = keyframes`
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+`
+
+const WrapperButton = styled.div`
+  opacity: 0;
+  animation: ${fadeIn} 1s ease 14s forwards;
+`
 
 export default function CatchySong() {
+  const [play, { sound, stop }] = useSound(wannabe)
+
+  useEffect(() => {
+    if (sound) {
+      play()
+      sound.fade(1, 0, 17000)
+    }
+    return stop
+  }, [play, sound, stop])
+
   return (
     <Wrapper>
-      <div>
-        <p>Yo, I'll tell you what I want, what I really, really want</p>
-        <p>So tell me what you want, what you really, really want</p>
-        <p>I'll tell you what I want, what I really, really want</p>
-        <p>So tell me what you want, what you really, really want</p>
-        <p>I wanna, (ha) I wanna, (ha) I wanna, (ha) I wanna, (ha)</p>
-        <p>
-          I wanna really, really, really <strong>to work at jungle devs</strong>
+      <Lyrics />
+      <ProgressBar />
+      <WrapperButton>
+        <p style={{ textAlign: 'center' }}>
+          <Btn to="/but-really">haha, cool</Btn>
         </p>
-      </div>
-      <p style={{ textAlign: 'center' }}>
-        <Btn to="/but-really">haha, cool</Btn>
-      </p>
+      </WrapperButton>
     </Wrapper>
   )
 }

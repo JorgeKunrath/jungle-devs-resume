@@ -16,6 +16,7 @@ img {
   --gray1: #333333;
   --jg-green: #00ac45;
   --jg-green-dark: #0f5221;
+  --bg: #fdfdf3;
 }
 
 html {
@@ -26,7 +27,7 @@ html {
   font-size: clamp(18px, calc(16px + 0.4vw), 24px);
   font-variant-numeric: lining-nums;
   color: var(--gray1);
-  line-height: 1.6;
+  line-height: 1.5;
 }
 
 *:focus {
@@ -35,7 +36,7 @@ html {
 
 body {
   margin: 0;
-  background-color: #fdfdf3;
+  background-color: var(--bg);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
