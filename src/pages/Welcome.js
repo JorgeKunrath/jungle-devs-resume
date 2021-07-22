@@ -10,8 +10,10 @@ export default function Welcome() {
   return (
     <Wrapper $center>
       <h1>Welcome, Jungler!</h1>
-      <p>In the beginning of this experience a song will start playing, but I warn you – it's catchy!</p>
       <p>
+        In the beginning of this experience a song will start playing, but I warn you — it's catchy!
+      </p>
+      <div>
         <Btn to="/catchy-song">Start</Btn>
         <br />
         <small>
@@ -21,7 +23,7 @@ export default function Welcome() {
             </Link>
           )}
         </small>
-      </p>
+      </div>
     </Wrapper>
   )
 }
