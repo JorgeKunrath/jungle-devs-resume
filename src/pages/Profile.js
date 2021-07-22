@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import { GlobalContext } from '../context/GlobalContext'
 import profilePic from '../assets/perfil-linkedin.jpg'
 import { Wrapper } from '../components/GlobalStyles'
-import Index from '../components/Index'
+import NavigationIndex from '../components/NavigationIndex'
 
 const Inner = styled.div`
   display: grid;
@@ -82,7 +82,7 @@ export default function Profile() {
           </Contact>
         </div>
       </Inner>
-      <Index />
+      <NavigationIndex />
     </Wrapper>
   )
 }

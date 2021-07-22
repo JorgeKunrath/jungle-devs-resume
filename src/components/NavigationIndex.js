@@ -19,7 +19,7 @@ const Wrapper = styled.div`
   }
 `
 
-export default function Index() {
+export default function NavigationIndex() {
   return (
     <Wrapper>
       <div>
