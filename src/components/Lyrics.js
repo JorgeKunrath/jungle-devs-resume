@@ -81,22 +81,22 @@ const Line = styled.div`
 export default function Lyrics() {
   return (
     <Wrapper>
-      <Line $dur="3.5s" $del="-0.25s">
+      <Line $dur="3.5s" $del="-0.2s">
         <p>Yo, I'll tell you what I want, what I really, really want</p>
       </Line>
-      <Line $dur="2.5s" $del="2.55s">
+      <Line $dur="2.5s" $del="2.6s">
         <p>So tell me what you want, what you really, really want</p>
       </Line>
-      <Line $dur="2.7s" $del="4.5s">
+      <Line $dur="2.7s" $del="4.7s">
         <p>I'll tell you what I want, what I really, really want</p>
       </Line>
-      <Line $dur="3s" $del="6.6s">
+      <Line $dur="3s" $del="6.8s">
         <p>So tell me what you want, what you really, really want</p>
       </Line>
-      <Line $dur="2.5s" $del="9s">
+      <Line $dur="2.5s" $del="9.2s">
         <p>I wanna, (ha) I wanna, (ha) I wanna, (ha) I wanna, (ha)</p>
       </Line>
-      <Line $dur="3s" $del="11s" $last={true}>
+      <Line $dur="3s" $del="11.1s" $last={true}>
         <p>
           I wanna really, really, really <strong>to work at jungle devs</strong>
         </p>
