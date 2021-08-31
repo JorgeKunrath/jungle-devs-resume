@@ -64,8 +64,8 @@ export default function Profile() {
           </Title>
           <Contact>
             <div>
-              <p>(48) 99145 2219</p>
-              <p>jorgeks95@gmail.com</p>
+              <p>(**) ***** ****</p>
+              <p>*******@gmail.com</p>
             </div>
             <div>
               <p>
